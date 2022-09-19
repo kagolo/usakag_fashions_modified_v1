@@ -7,8 +7,11 @@
                <form id="form">
                     <div id="user-info">
                          <div class="form-field">
-                              <input required class="form-control" type="text" name="name" placeholder="Name..& Phone Number....">
+                              <input required class="form-control" type="text" name="name" placeholder="Name..">
                          </div>
+						 <div class="form-field">
+							<input required class="form-control" type="number" name="number" placeholder="Phone Number..">
+					     </div>
                          <div class="form-field">
                               <input required class="form-control" type="email" name="email" placeholder="Email..">
                          </div>
@@ -107,6 +110,7 @@
 		var  userFormData = {
 			'name':null,
 			'email':null,
+			'number':null,
 			'total':total,
 		}
 
@@ -127,6 +131,7 @@
 		if(user == 'AnonymousUser'){
 			userFormData.name = form.name.value
 			userFormData.email = form.email.value
+			userFormData.number = form.number.value
 		}
 
 		var url = '/process_order/'

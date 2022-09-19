@@ -1,4 +1,5 @@
 import json
+import numbers
 from . models import * 
 
 
@@ -61,6 +62,7 @@ def guestOrder(request, data):
      print('COOKIES:', request.COOKIES)
      name = data['form']['name']
      email = data['form']['email']
+     number = data['form']['number']
 
      cookieData = cookieCart(request)
      items = cookieData['items']
@@ -68,6 +70,7 @@ def guestOrder(request, data):
      customer, created = Customer.objects.get_or_create(
         email=email,
         )
+     customer.number = number
      customer.name = name
      customer.save()
 
