@@ -38,10 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
     'usakag_fashions_modified_v1',
 
-    'store.apps.StoreConfig', 
+    'store', 
     'crispy_forms',
     'django_filters',
     'widget_tweaks',
