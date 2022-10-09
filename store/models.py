@@ -1,9 +1,6 @@
-import email
-from email.mime import image
-from tkinter import CASCADE
-from unicodedata import name
 from django.db import models
 from django.contrib.auth.models import User
+from django.db.models.fields.files import ImageField
 
 # Create your models here.
 
