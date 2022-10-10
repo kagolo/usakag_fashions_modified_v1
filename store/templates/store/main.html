@@ -63,14 +63,10 @@ if(cart == undefined){
 console.log('cart:', cart)
 </script>
 </head>
-<body>
-  <div class="text-center">
-    <h6><a href="#"><img id="logo-icon" src="{% static 'images/phone.png' %}" alt=" " /></a>0704544125  Working Hours: (mon-sat)9am-6pm</h6> 
-  </div>
-
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="{% url 'store' %}"><img id="logo-icon" src="{% static 'images/capture1.png' %}" alt=" " />Usakag Fashions</a>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="{% url 'store' %}"><img id="logo-icon" src="{% static 'images/uk_logo.png' %}" alt=" " />Usakag Fashions</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -119,6 +115,7 @@ console.log('cart:', cart)
       </nav>
       
      <div class="container">
+        <br>
         <br>
         {% block content %}
 
