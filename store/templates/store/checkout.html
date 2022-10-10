@@ -155,6 +155,10 @@
 		  window.location.href = "{% url 'store' %}"
 
 		})
+		.catch(err => {
+          // Do something for an error here
+          console.log("Error Reading data " + err);
+        });
 		
 	}	
 </script>
