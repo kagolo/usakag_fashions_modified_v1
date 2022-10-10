@@ -150,7 +150,7 @@
 			alert('Transction completed');
 
 		 cart = {}
-        document.cookie = 'cart=' + JSON.stringify(cart) + "USAKENTS.COM/"
+        document.cookie = 'cart=' + JSON.stringify(cart) + ";domain=;path=/"
 
 		  window.location.href = "{% url 'store' %}"
 
