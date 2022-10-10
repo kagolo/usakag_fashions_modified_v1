@@ -18,7 +18,7 @@ class Product(models.Model):
     price_0 = models.DecimalField(max_digits=10, decimal_places=0, null=True)
     price = models.DecimalField(max_digits=10, decimal_places=0)
     digital = models.BooleanField(default=False, null=True, blank=False)
-    image = models.ImageField(upload_to='images', null=True, blank=True)
+    image = models.ImageField(upload_to='media', null=True, blank=True)
     STATUS_TYPE_CHOICES=[
         ('BAGS','BAGS'),
         ('MEN','MEN'),
@@ -119,7 +119,7 @@ class Contact_us(models.Model):
     agent_name=models.CharField(max_length=200,null=False)
     agent_position=models.CharField(max_length=200,null=False)
     agent_contact=models.CharField(max_length=200,null=True)
-    agent_image=models.ImageField(upload_to='images')
+    agent_image=models.ImageField(upload_to='media')
 
     def __str__(self):
         return self.agent_name
@@ -127,7 +127,7 @@ class Contact_us(models.Model):
 
 class Carousel(models.Model):
     image_name = models.CharField(max_length=200)
-    carousel_image = models.ImageField(upload_to='images')
+    carousel_image = models.ImageField(upload_to='media')
 
     def __str__(self):
         return self.image_name
