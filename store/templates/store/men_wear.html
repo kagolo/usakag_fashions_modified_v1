@@ -7,6 +7,7 @@
      <div class="row">
         {% for men in men_wear %}
         <div class="col-lg-4">
+          <div class="product-img">
             <img class="thumbnail" src="{{men.imageURL}}">
             <div class="box-element product">
                 <h6><strong>{{men.name}}</strong></h6>
@@ -17,6 +18,7 @@
 
 
             </div>
+          </div>
         </div>
         {% endfor %}
 

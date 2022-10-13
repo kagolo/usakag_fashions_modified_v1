@@ -15,6 +15,7 @@
 <div class="row">
   {% for contact in contacts %}
    <div class="col-lg-4">
+    <div class="product-img">
       <img class="thumbnail" src="{{contact.agent_image.url}}">
       <div class="box-element product">
           <h6><strong>{{contact.agent_name}}</strong></h6>
@@ -24,6 +25,7 @@
           <h6>{{contact.agent_contact}}</h6>
 
       </div>
+    </div>
    </div>
   {% endfor %}
 </div>

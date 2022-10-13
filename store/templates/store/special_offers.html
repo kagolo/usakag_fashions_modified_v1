@@ -8,6 +8,7 @@
      <div class="row">
         {% for special in specials %}
         <div class="col-lg-4">
+          <div class="product-img">
             <img class="thumbnail" src="{{special.imageURL}}">
             <div class="box-element product">
                 <h6><strong>{{special.name}}</strong></h6>
@@ -19,6 +20,7 @@
                 <a  class="btn btn-outline-success" href="{% url 'single_product' special.id %}">View</a>
 
             </div>
+          </div> 
         </div>
         {% endfor %}
 
