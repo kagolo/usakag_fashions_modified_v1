@@ -8,7 +8,7 @@
         {% for men in men_wear %}
         <div class="col-lg-4">
           <div class="product-img">
-            <img class="thumbnail" src="{{men.imageURL}}">
+            <a href="{% url 'single_product' men.id %}"><img class="thumbnail" src="{{men.imageURL}}"></a>
             <div class="box-element product">
                 <h6><strong>{{men.name}}</strong></h6>
                 <hr>

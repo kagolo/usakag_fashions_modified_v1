@@ -20,13 +20,13 @@
       <!-- The slideshow -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-            <a href="{% url 'men' %}"><img src="{% static 'images/shirts.jpg' %}" width="auto" height="400px">
+            <a href="{% url 'special_offers' %}"><img src="{% static 'images/shirts.jpg' %}" width="auto" height="400px">
                 <div class="text" style=font-size:30px;>SK Fashions Men;<br><br></div></a>
         </div>
         
         {% for carousel in carousels %}
         <div class="carousel-item">
-            <a href="#"><img src="{{carousel.imageURL}}" width="auto" height="400px">
+            <a href="{% url 'special_offers' %}"><img src="{{carousel.imageURL}}" width="auto" height="400px">
                 <div class="text" style=font-size:30px;>{{carousel.image_name}};<br><br></div></a>
         </div>
         {% endfor %}
