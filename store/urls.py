@@ -1,6 +1,16 @@
 from django.urls import path
 from . import views
 
+# from .views import (
+#     DownloadCSVViewdownloadcsv,
+#     StudentBulkUploadView,
+#     StudentCreateView,
+#     StudentDeleteView,
+#     StudentDetailView,
+#     StudentListView,
+#     StudentUpdateView,
+# )
+
 urlpatterns = [
     path('', views.store, name="store"),
     path('cart/', views.cart, name="cart"),
@@ -21,6 +31,14 @@ urlpatterns = [
     path("register", views.register, name= "register"),
     path("login", views.login_request, name="login"),
     path("logout", views.logout_request, name= "logout"),
+
+    # path("list", StudentListView.as_view(), name="student-list"),
+    # path("<int:pk>/", StudentDetailView.as_view(), name="student-detail"),
+    # path("create/", StudentCreateView.as_view(), name="student-create"),
+    # path("<int:pk>/update/", StudentUpdateView.as_view(), name="student-update"),
+    # path("delete/<int:pk>/", StudentDeleteView.as_view(), name="student-delete"),
+    # path("upload/", StudentBulkUploadView.as_view(), name="student-upload"),
+    # path("download-csv/", DownloadCSVViewdownloadcsv.as_view(), name="download-csv"),
 
 
 ]
