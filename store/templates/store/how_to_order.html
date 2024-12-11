@@ -1,0 +1,43 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+<br>
+<br>
+<h2 class="text-center">STEPS TAKEN TO SEND AN ORDER AT USAKAG FASHIONS</h2>
+<!-- <h4>Steps 1 and 2 </h4> -->
+ <p>
+Step 1:- Click on our website <a href="{% url 'store' %}">@Usakag Fashions</a> to view available products.
+<br>
+Step 2:- Click on "Add to cart" button on any preffered item as shown below. 
+ </p>
+<br>
+<img src="{% static 'images/11_step_order.jpg' %}" width="auto" height="400px">
+<br>
+<br>
+<p>
+Step 3:- Click on the <a href="{% url 'cart' %}">Cart Image</a> to view selected items in the Cart.
+<br>
+Step 4:- You can click on the arrow pointing up to add more similar item into the cart or an arrow pointing down to remove that item from the cart. Then after click on "Checkout" to send an order as shown below.
+<br>
+<br>
+<img src="{% static 'images/media/22_step_order.jpg' %}" width="auto" height="400px">
+</p>
+<br>
+<p>
+Step 5:- if you are not registered, just fill the form with your name, Phone number and email address.
+<br>
+Step 6:- Confirm the selected cart item with their corresponding prices, items number and the grand total price. Then click on the button "Send an order" to complete the process.
+<br> 
+Step 7:- A popup box will appear on your screen with the word "Transaction completed", you will be required to just press "OK", the process will be completed and you will be redirected to the home screen.
+<br>
+<br>
+<img src="{% static 'images/media/33_step_order_4.jpg' %}" width="auto" height="400px">
+
+</p>
+
+
+
+
+
+
+{% endblock content %}

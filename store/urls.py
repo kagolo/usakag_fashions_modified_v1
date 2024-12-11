@@ -27,6 +27,7 @@ urlpatterns = [
     path('single_product/<int:productId>/',views.single_product,name='single_product'),
     path('about_us/', views.manage_about_us, name="about_us"),
     path('faq/', views.manage_faq, name="faq"),
+    path('how_to_order/', views.manage_how_to_order, name="how_to_order"),
     
     path("register", views.register, name= "register"),
     path("login", views.login_request, name="login"),

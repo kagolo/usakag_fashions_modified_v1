@@ -7,7 +7,7 @@
 <hr>
 
     <div class="row">
-        {% for bag in bags %}
+        {% for bag in bags reversed %}
         <div class="col-lg-4">
           <div class="product-img">
             <a href="{% url 'single_product' bag.id %}"><img class="thumbnail" src="{{bag.imageURL}}"></a>

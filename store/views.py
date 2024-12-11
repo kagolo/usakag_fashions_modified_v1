@@ -260,6 +260,15 @@ def manage_faq(request):
     return render(request, 'store/faq.html', context)
 
 
+# how to view
+
+def manage_how_to_order(request):
+    data= cartData(request)
+    cartItems = data['cartItems']
+    context={
+         'cartItems':cartItems
+    }
+    return render(request,'store/how_to_order.html', context)
 
 #  admin view
 
