@@ -6,7 +6,7 @@
 <h2 class="text-center">Women Wears</h2>
 <hr>
      <div class="row">
-        {% for women in women_wear %}
+        {% for women in women_wear reversed %}
         <div class="col-lg-4">
           <div class="product-img">
             <a href="{% url 'single_product' women.id %}"><img class="thumbnail" src="{{women.imageURL}}"></a>
