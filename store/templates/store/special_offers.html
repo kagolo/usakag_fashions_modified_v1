@@ -6,7 +6,7 @@
 <h2 class="text-center">Special Offers</h2>
 <hr>
      <div class="row">
-        {% for special in specials %}
+        {% for special in specials reversed %}
         <div class="col-lg-4">
           <div class="product-img">
             <a href="{% url 'single_product' special.id %}"><img class="thumbnail" src="{{special.imageURL}}"></a>
