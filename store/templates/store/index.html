@@ -64,7 +64,7 @@
      </form>
 
     <div class="row">
-        {% for product in user_product_filter.qs reversed %}
+        {% for product in user_product_filter.qs %}
         <div class="col-lg-4">
           <div class="product-img">
             <a href="{% url 'single_product' product.id %}"><img class="thumbnail" src="{{product.imageURL}}"></a>
