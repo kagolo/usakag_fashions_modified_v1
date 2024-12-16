@@ -2,7 +2,11 @@
 {% load static %}
 <html>
 <head>
-     <title>Usakag Fashions</title>        
+     <title>Usakag Fashions icon</title>  
+     
+      <!-- add icon link -->
+    <link rel="icon" href= "{% static 'images/usakag_title_logo.jpeg' %}" type="image/x-icon" />
+     
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
      
@@ -109,7 +113,7 @@ console.log('cart:', cart)
             <a href="{% url 'store' %}"class="btn btn-warning">Login</a>
             <a href="{% url 'store' %}"class="btn btn-warning">Logout</a>
             
-            <a href="{% url 'store' %}"><img id="logo-icon" src="{% static 'images/uk_logo.png' %}" alt=" " /></a>
+            <a href="{% url 'store' %}"><img id="logo-icon" src="{% static 'images/usakag_title_logo.jpeg' %}" alt=" " /></a>
 
        </div>
         </div>
